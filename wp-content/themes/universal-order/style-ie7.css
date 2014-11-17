@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav li,#menu-main-menu li a,.social a, #mobile,h1,h2,h3,em {zoom: 1;display: inline;}
+.social,#mobile{display:none;}
