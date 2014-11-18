@@ -30,16 +30,17 @@
     <header>
       <div class="wrap">
         <img src="<?php bloginfo('template_directory'); ?>/images/universal-order-logo.png" alt="Universal Order Live Music Band" id="logo" title="Universal Order Live Music Band"/>
+        <a href="#" id="mobile" class="flaticon-menu"></a>       
         <nav>
           <?php wp_nav_menu( array('menu' => 'main-menu','container' => false )); ?>
-          <a href="#" id="mobile" class="flaticon-menu48"></a>       
+          <ul class="social" id="social">
+            <li><a href="https://www.facebook.com/pages/Universal-Order/811894985509505" target="_blank" class="flaticon-facebook"></a></li>
+            <li><a href="https://twitter.com/uniorder" target="_blank" class="flaticon-social"></a></li>
+            <li><a href="https://www.youtube.com/user/universalorderband" target="_blank" class="flaticon-youtube"></a></li>
+            <li><a href="https://soundcloud.com/universalorder/" target="_blank" class="flaticon-soundcloud"></a></li>
+          </ul>
         </nav>
-        <ul class="social">
-          <li><a href="https://www.facebook.com/pages/Universal-Order/811894985509505" target="_blank" class="flaticon-facebook31"></a></li>
-          <li><a href="https://twitter.com/uniorder" target="_blank" class="flaticon-social19"></a></li>
-          <li><a href="https://www.youtube.com/user/universalorderband" target="_blank" class="flaticon-youtube18"></a></li>
-          <li><a href="https://soundcloud.com/universalorder/" target="_blank" class="flaticon-soundcloud3"></a></li>
-        </ul>
+
       </div>
     </header>
 

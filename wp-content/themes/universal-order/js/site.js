@@ -10,6 +10,7 @@ function loadTwitter() {
 function mobileNav() {
 jQuery('#mobile').click(function() {
   jQuery('#menu-main-menu').toggleClass("show")
+  jQuery('#social').toggleClass("show")
   return false;
 });
 }

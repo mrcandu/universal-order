@@ -20,8 +20,8 @@ html {padding:0;margin:0;}
 body {padding:0;margin:0;webkit-font-smoothing: antialiased;background:#eee}
 body,input,select,textarea {font-family:'CoreSansNR';font-size:1.1em;color:#000;font-weight:normal}
 img {padding:0;margin:0;border:0;display:block;}
-a {color:#ec242e;text-decoration:none;-o-transition:.5s;-ms-transition:.5s;-moz-transition:.5s;-webkit-transition:.5s;/* ...and now for the proper property */transition:.5s;}
-a:hover {color:#dc1b21;}
+a {color:#ec242e;text-decoration:none;}
+a:hover {color:#ae0d12;}
 p {padding-bottom:10px;margin:0;}
 .clear{clear:both;}
 
@@ -43,15 +43,18 @@ nav li {display:inline-block;padding:0;}
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 font-family: Flaticon;font-size: 1.5em;font-style: normal;font-weight:normal;
 }
-.flaticon-facebook31:before {content: "\e000";}
-.flaticon-menu48:before {content: "\e001";}
-.flaticon-social19:before {content: "\e002";}
-.flaticon-soundcloud3:before {content: "\e003";}
-.flaticon-youtube18:before {content: "\e004";}
+.flaticon-link:before {content: "\e000";font-size: 0.9em;padding-right:10px;}
+.flaticon-map:before {content: "\e001";font-size: 1.2em;padding-right:5px;}
+.flaticon-facebook:before {content: "\e002";}
+.flaticon-menu:before {content: "\e003";}
+.flaticon-social:before {content: "\e004";}
+.flaticon-soundcloud:before {content: "\e005";}
+.flaticon-youtube:before {content: "\e006";}
 
-.social {position:absolute;top:0px;right:0px;z-index:20;color:#fff;font-size:1.2em;}    
+
+.social {position:absolute;top:0px;right:0px;z-index:20;color:#fff;font-size:0.9em;}    
 .social li {display:inline-block;padding:0;padding-left:10px;}
-.social a, #mobile {background:#fff;padding:5px 5px 0px 5px;display:inline-block;border-radius: 6px;-moz-border-radius: 6px; -webkit-border-radius: 6px; border: 1px solid #fff;color:#000;}
+.social a, #mobile {background:#fff;padding:4px 5px 1px 5px;display:inline-block;border-radius: 6px;-moz-border-radius: 6px; -webkit-border-radius: 6px; border: 1px solid #fff;color:#000;}
 #mobile {position:absolute;top:0px;right:0px;z-index:20;display:none;padding:5px 5px 2px 5px;}
 .social a:hover, #mobile:hover{background:#ec242e;border: 1px solid #ec242e;}
 
@@ -82,10 +85,23 @@ article h1 a:hover {color:#ec242e;}
 article {border-bottom:1px solid #ddd;margin-bottom:40px;}
 article h1{font-size:1.3em;}
 article h2{font-size:1.0em;}
+article p.read{clear:left;}
 section article section img {float:left;margin-right:20px;width:200px;border:#000 solid 0px;margin-bottom:10px;margin-top:16px;clear:left;height: auto;}
 section article section img.alignright {float:right;margin-right:0px;margin-left:20px;clear:right;}
 section article section img.size-full {float:none;margin-right:0px;margin-left:0px;clear:left;width:100%;margin-top:10px;}
-.right article h1 {font-size:1.00em;padding:4px 8px 4px 8px;}
+
+article time{float:left;display:inline-block;margin:0;font-size:0.9em;margin-right:10px;margin-bottom:10px;}
+article span.dt{}
+article span.day, article span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;border-bottom:2px solid #eee;border-right:2px solid #eee;}
+article span.day{background:#ec242e;color:#fff;}
+article span.month{background:#fff;color:#000;border-bottom:none;}
+
+.right article .float {float:left;clear:none;}
+.right article h1 {background:none;font-size:1.00em;padding:0;display:block;margin-top:6px;margin-bottom:6px;float:left;clear:left;}
+.right article h1 a {color:#000;display:block;}
+.right article h1 a:hover {color:#ec242e;}
+.right article em {clear:none;display:block;background:none;padding:0;color:#666;float:left;clear:left;}
+.right article p {clear:both;}
 
 footer{background:#ec242e;clear:both;}
 footer a{color:#000;font-weight:bold;}
@@ -94,6 +110,7 @@ footer section.main article{margin-bottom:20px;border-bottom:none;}
 footer section h1 {color:#000;}
 footer section article{}
 footer article h1, footer article h2, footer article h3 {color:#ec242e;border:none;}
+footer .social {position:absolute;top:20px;}
 footer .social a{background:#000;color:#ec242e;border: 1px solid #000;}
 footer .social a:hover{background:#fff;border: 1px solid #fff;color:#ec242e;}
 
@@ -105,6 +122,7 @@ section.main {width:830px;} /* + 40 + */ section.right {width:350px;} /* = 1220 
 .banner {height: 400px;}
 .banner section article {margin-top:120px;}
 section.main {width:513px;} /* + 40 + */ section.right {width:215px;} /* = 768 */
+article span.day, article span.month{clear:none;}
 }
 
 /* Desktops and laptops ----------- */
@@ -120,6 +138,7 @@ header img#logo {width:100%;}
 section.main, section.right, section.full {margin-top:20px;width:100%;}
 section.right {clear:both;margin-top:0;}
 main article{margin-bottom:20px;}
+article span.day, article span.month{clear:both;}
 
 /*Mobile Menu*/
 #mobile{display:block;}
