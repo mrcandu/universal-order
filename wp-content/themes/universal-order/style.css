@@ -11,13 +11,19 @@ Text Domain: universalorder
 @charset "utf-8";
   
 @font-face {font-family: 'CoreSansNR'; font-weight:normal; src: url('fonts/s-core_-_coresansnr45regular-webfont.eot');src: url('fonts/s-core_-_coresansnr45regular-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/s-core_-_coresansnr45regular-webfont.woff') format('woff'),url('fonts/s-core_-_coresansnr45regular-webfont.ttf') format('truetype');}
-@font-face {font-family: 'CoreSansNR'; font-weight:bold; src: url('fonts/s-core_-_coresansnr85heavy-webfont.eot');src: url('fonts/s-core_-_coresansnr85heavy-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/s-core_-_coresansnr85heavy-webfont.woff') format('woff'),url('fonts/s-core_-_coresansnr85heavy-webfont.ttf') format('truetype');}
-@font-face {font-family: 'CoreSansNR'; font-weight:lighter; src: url('fonts/s-core_-_coresansnr25extralt-webfont');src: url('fonts/s-core_-_coresansnr25extralt-webfont?#iefix') format('embedded-opentype'),url('fonts/s-core_-_coresansnr25extralt-webfont.woff') format('woff'),url('fonts/s-core_-_coresansnr25extralt-webfont.ttf') format('truetype');}
+
+@font-face {font-family: 'CoreSansNR'; font-weight:bold; src: url('fonts/s-core_-_coresansnr65bold-webfont.eot');src: url('fonts/s-core_-_coresansnr65bold-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/s-core_-_coresansnr65bold-webfont.woff') format('woff'),url('fonts/s-core_-_coresansnr65bold-webfont.ttf') format('truetype');}
+
+@font-face {font-family: 'CoreSansNR'; font-weight:800; src: url('fonts/s-core_-_coresansnr85heavy-webfont.eot');src: url('fonts/s-core_-_coresansnr85heavy-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/s-core_-_coresansnr85heavy-webfont.woff') format('woff'),url('fonts/s-core_-_coresansnr85heavy-webfont.ttf') format('truetype');}
+
+@font-face {font-family: 'CoreSansNR'; font-weight:lighter; src: url('fonts/s-core_-_coresansnr35light-webfont.eot');src: url('fonts/s-core_-_coresansnr35light-webfont?#iefix') format('embedded-opentype'),url('fonts/s-core_-_coresansnr35light-webfont.woff') format('woff'),url('fonts/s-core_-_coresansnr35light-webfont.ttf') format('truetype');}
+
 @font-face {font-family: "Flaticon";src: url("fonts/flaticon.eot");src: url("fonts/flaticon.eot#iefix") format("embedded-opentype"),url("fonts/flaticon.woff") format("woff"),url("fonts/flaticon.ttf") format("truetype"),url("fonts/flaticon.svg") format("svg");font-weight: normal;font-style: normal;}
 
 
+
 html {padding:0;margin:0;}
-body {padding:0;margin:0;webkit-font-smoothing: antialiased;background:#eee}
+body {padding:0;margin:0;webkit-font-smoothing: antialiased;background:#efefef}
 body,input,select,textarea {font-family:'CoreSansNR';font-size:1.1em;color:#000;font-weight:normal}
 img {padding:0;margin:0;border:0;display:block;}
 a {color:#ec242e;text-decoration:none;}
@@ -69,7 +75,7 @@ strong.title{display:block;font-weight:lighter;text-transform:uppercase;color:#0
 .banner {height:500px;background-image: url('images/universal-order-banner.png');background-size: cover;background-position: top;margin-bottom:0px;}
 .banner section article {margin-top:220px;border-bottom:none;margin-bottom:none;}
 .banner h1, .banner h2, .banner h3 {background:rgba(0,0,0,0.9);}
-.banner h1 {font-size:2.6em;}
+.banner h1 {font-size:2.6em;font-weight:800;}
 .banner h2 {font-size:1.3em;}
 .banner h3 {font-size:1.3em;font-weight:lighter;}
 
@@ -78,11 +84,13 @@ section.main {float:left;margin-right:40px;clear:left;}
 section.right {float:right;clear:right;}
 section.full {float:left;clear:both;width:100%;}
 
+main section.main article, main section.right article {background:#fff;padding:20px 20px 10px 20px;}
+
 article section {clear:both;padding:10px 0 0px 0px;clear:left;}
 article h1 a {color:#fff;}
 article h1 a:hover {color:#ec242e;}
 
-article {border-bottom:1px solid #ddd;margin-bottom:40px;}
+article {border-bottom:0px solid #ddd;margin-bottom:20px;}
 article h1{font-size:1.3em;}
 article h2{font-size:1.0em;}
 article p.read{clear:left;}
@@ -92,9 +100,9 @@ section article section img.size-full {float:none;margin-right:0px;margin-left:0
 
 article time{float:left;display:inline-block;margin:0;font-size:0.9em;margin-right:10px;margin-bottom:10px;}
 article span.dt{}
-article span.day, article span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;border-bottom:2px solid #eee;border-right:2px solid #eee;}
-article span.day{background:#ec242e;color:#fff;}
-article span.month{background:#fff;color:#000;border-bottom:none;}
+article span.day, article span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;}
+article span.day{background:#000;color:#fff;}
+article span.month{background:#ec242e;color:#fff;font-weight:bold;}
 
 .right article .float {float:left;clear:none;}
 .right article h1 {background:none;font-size:1.00em;padding:0;display:block;margin-top:6px;margin-bottom:6px;float:left;clear:left;}
@@ -107,7 +115,7 @@ footer{background:#ec242e;clear:both;}
 footer a{color:#000;font-weight:bold;}
 footer a:hover{color:#fff;}
 footer section.main article{margin-bottom:20px;border-bottom:none;}
-footer section h1 {color:#000;}
+footer section h1 {color:#000;font-weight:800;}
 footer section article{}
 footer article h1, footer article h2, footer article h3 {color:#ec242e;border:none;}
 footer .social {position:absolute;top:20px;}
