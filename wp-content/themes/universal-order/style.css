@@ -65,12 +65,11 @@ font-family: Flaticon;font-size: 1.5em;font-style: normal;font-weight:normal;
 .social a:hover, #mobile:hover{background:#ec242e;border: 1px solid #ec242e;}
 
 
-h1,h2,h3,em {margin:0;padding:0;font-weight:bold;margin-bottom:2px;display:inline-block;float:left;clear:left;padding:5px 10px 5px 10px;background:#000;color:#fff;}
+h1,h2,h3,time {margin:0;font-weight:bold;margin-bottom:2px;display:block;float:left;clear:left;padding:5px 10px 5px 10px;background:#000;color:#fff;}
 h1,h2{text-transform:uppercase;}
-h3,em {padding:4px 8px 4px 8px;font-style:normal;font-weight:normal;font-size:0.9em;}
+h3,time {padding:4px 8px 4px 8px;font-style:normal;font-weight:normal;font-size:0.9em;}
 h3{background-color:#000;}
-em{background-color:#666;}
-strong.title{display:block;font-weight:lighter;text-transform:uppercase;color:#000;padding:0;margin:0;margin-bottom:20px;font-size:1.6em;}
+time{background-color:#666;color:#fff;}
 
 .banner {height:500px;background-image: url('images/universal-order-banner.png');background-size: cover;background-position: top;margin-bottom:0px;}
 .banner section article {margin-top:220px;border-bottom:none;margin-bottom:none;}
@@ -86,29 +85,28 @@ section.full {float:left;clear:both;width:100%;}
 
 main section.main article, main section.right article {background:#fff;padding:20px 20px 10px 20px;}
 
-article section {clear:both;padding:10px 0 0px 0px;clear:left;}
+strong.title {display: block;font-weight: lighter;text-transform: uppercase;color: #000;padding: 0;margin: 0;margin-bottom: 20px;font-size: 1.6em;}
+
+article {border-bottom:0px solid #ddd;margin-bottom:20px;position:relative;}
+article h1{font-size:1.3em;}
 article h1 a {color:#fff;}
 article h1 a:hover {color:#ec242e;}
-
-article {border-bottom:0px solid #ddd;margin-bottom:20px;}
-article h1{font-size:1.3em;}
-article h2{font-size:1.0em;}
+article time{background:#666;}
+article section {clear:both;padding:10px 0 0px 0px;}
 article p.read{clear:left;}
+
 section article section img {float:left;margin-right:20px;width:200px;border:#000 solid 0px;margin-bottom:10px;margin-top:16px;clear:left;height: auto;}
 section article section img.alignright {float:right;margin-right:0px;margin-left:20px;clear:right;}
 section article section img.size-full {float:none;margin-right:0px;margin-left:0px;clear:left;width:100%;margin-top:10px;}
 
-article time{float:left;display:inline-block;margin:0;font-size:0.9em;margin-right:10px;margin-bottom:10px;}
-article span.dt{}
-article span.day, article span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;}
-article span.day{background:#000;color:#fff;}
-article span.month{background:#ec242e;color:#fff;font-weight:bold;}
-
-.right article .float {float:left;clear:none;}
-.right article h1 {background:none;font-size:1.00em;padding:0;display:block;margin-top:6px;margin-bottom:6px;float:left;clear:left;}
+.right article time{margin:0;font-size:0.9em;margin:0 10px 10px 0;padding:0;display:inline-block}
+.right article span.day, article span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;}
+.right article span.day{background:#000;color:#fff;}
+.right article span.month{background:#ec242e;color:#fff;font-weight:bold;}
+.right article h1 {background:none;font-size:1.00em;display:inline;margin:0px;padding:0;float:none;clear:none;}
 .right article h1 a {color:#000;display:block;}
 .right article h1 a:hover {color:#ec242e;}
-.right article em {clear:none;display:block;background:none;padding:0;color:#666;float:left;clear:left;}
+.right article em {display:inline-block;margin:5px 0 10px 0;color:#666;font-size:0.9em;font-style:normal;}
 .right article p {clear:both;}
 
 footer{background:#ec242e;clear:both;}
@@ -116,43 +114,12 @@ footer a{color:#000;font-weight:bold;}
 footer a:hover{color:#fff;}
 footer section.main article{margin-bottom:20px;border-bottom:none;}
 footer section h1 {color:#000;font-weight:800;}
-footer section article{}
 footer article h1, footer article h2, footer article h3 {color:#ec242e;border:none;}
+footer article h2{font-size:1.0em;}
 footer .social {position:absolute;top:20px;}
 footer .social a{background:#000;color:#ec242e;border: 1px solid #000;}
 footer .social a:hover{background:#fff;border: 1px solid #fff;color:#ec242e;}
 
-.wrap {margin:auto;width:1220px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1280*/
-section.main {width:830px;} /* + 40 + */ section.right {width:350px;} /* = 1220 */
-
-@media only screen  and (max-width : 1279px) {
-.wrap {margin:auto;width:768px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 828*/
-.banner {height: 400px;}
-.banner section article {margin-top:120px;}
-section.main {width:513px;} /* + 40 + */ section.right {width:215px;} /* = 768 */
-article span.day, article span.month{clear:none;}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen  and (max-width : 827px) {
-/* Styles */
-body {font-size:0.9em;}
-.wrap {width:auto;margin:0 10px 0 10px;}
-.banner {height: 250px;}
-.banner section article {margin-top:50px;font-size:0.75em;}
-header {width:auto;}
-header img#logo {width:100%;}
-.social{display:none;}
-section.main, section.right, section.full {margin-top:20px;width:100%;}
-section.right {clear:both;margin-top:0;}
-main article{margin-bottom:20px;}
-article span.day, article span.month{clear:both;}
-
-/*Mobile Menu*/
-#mobile{display:block;}
-#menu-main-menu, #menu-main-menu li {overflow:hidden;height:0;margin:0px;-webkit-transition: all .5s ease;-moz-transition: all .5s ease;transition: all .5s ease;padding:0;}
-#menu-main-menu{position:relative;}
-#menu-main-menu li{display:block;}
-#menu-main-menu.show {height:auto;}
-#menu-main-menu.show li {height:auto;border-top:#111 solid 1px;padding:20px 0 0 0;margin-top:20px;}
-}
+/*Width for non responsive browsers*/
+.wrap {margin:auto;width:964px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
+section.main {width:648px;} /* + 40 + */ section.right {width:276px;} /* = 964 */

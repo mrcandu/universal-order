@@ -7,7 +7,9 @@
         <?php while ( have_posts() ) : the_post(); ?>
         <article>
           <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-          <em><?php echo get_the_date(); ?></em>
+          <time datetime="<?php echo get_the_date(); ?>" title="<?php echo get_the_date(); ?>">
+            <?php echo get_the_date(); ?>
+          </time>
           <section>
             <?php the_content(); ?>
             <p class="read"><a href="<?php the_permalink(); ?>">Read more</a></p>

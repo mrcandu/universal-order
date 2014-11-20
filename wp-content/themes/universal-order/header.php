@@ -17,6 +17,7 @@
     <![endif]-->
   <?php wp_head(); ?>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-media.css" type="text/css" />
   <!--[if lt IE 9]>
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-ie8.css" type="text/css" />
   <![endif]-->

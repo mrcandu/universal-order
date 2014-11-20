@@ -9,16 +9,13 @@
 <?php $date = DateTime::createFromFormat('Ymd', get_field('event_date')); ?>
                 
         <article>
-            
+        
             <time datetime="<?php echo $date->format('Y-m-d'); ?>" title="<?php echo $date->format('Y-m-d'); ?>">
               <span class="day"><?php echo $date->format('jS'); ?></span>
               <span class="month"><?php echo $date->format('M'); ?></span>
             </time>
-            
-            <div class="float">              
             <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             <em class="flaticon-map"><?php echo get_field('event_venue') ?></em>
-            </div>
             
             <?php the_excerpt(); ?>
             <p class="read"><a href="<?php the_permalink(); ?>">Read more</a></p>

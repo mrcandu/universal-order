@@ -1,0 +1,58 @@
+@charset "utf-8"; 
+
+/* Smartphones and tablets----------- */
+@media only screen and (max-width : 767px) {
+.wrap {width:auto;margin:0 20px 0 20px;}
+header {width:auto;}
+header img#logo {width:100%;}
+
+section.main, section.right, section.full {margin-top:20px;width:100%;}
+section.right {clear:both;margin-top:0;}
+
+.social{display:none;}
+
+#mobile{display:block;}
+#menu-main-menu, #menu-main-menu li {overflow:hidden;height:0;margin:0px;-webkit-transition: all .5s ease;-moz-transition: all .5s ease;transition: all .5s ease;padding:0;}
+#menu-main-menu{position:relative;}
+#menu-main-menu li{display:block;}
+#menu-main-menu.show {height:auto;}
+#menu-main-menu.show li {height:auto;border-top:#111 solid 1px;padding:20px 0 0 0;margin-top:20px;}
+}
+
+/* Smartphones----------- */
+@media only screen and (max-width : 480px) {
+body {font-size:0.9em;}
+.banner {height: 250px;}
+.banner section article {margin-top:50px;font-size:0.75em;}
+main article{margin-bottom:20px;}
+}
+
+/* tablets ----------- */
+@media only screen and (min-width : 481px) and (max-width : 767px) {
+body {font-size:0.9em;}
+.banner {height: 250px;}
+.banner section article {margin-top:50px;font-size:0.75em;}
+main article{margin-bottom:20px;}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+.wrap {margin:auto;width:708px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
+section.main {width:468px;} /* + 40 + */ section.right {width:200px;} /* = 965 */
+.banner {height: 400px;}
+.banner section article {margin-top:120px;}
+article span.day, article span.month{clear:none;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1024px) and (max-width : 1365px) {
+.wrap {margin:auto;width:964px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
+section.main {width:648px;} /* + 40 + */ section.right {width:276px;} /* = 964 */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1366px) {
+.wrap {margin:auto;width:1306px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1366*/
+section.main {width:886px;} /* + 40 + */ section.right {width:380px;} /* = 965 */
+}
