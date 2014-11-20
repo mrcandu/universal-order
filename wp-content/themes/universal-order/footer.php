@@ -17,12 +17,12 @@
         </section>
         <div class="clear"></div>
 
-        <ul class="social">
-          <li><a href="https://www.facebook.com/pages/Universal-Order/811894985509505" target="_blank" class="flaticon-facebook"></a></li>
-          <li><a href="https://twitter.com/uniorder" target="_blank" class="flaticon-social"></a></li>
-          <li><a href="https://www.youtube.com/user/universalorderband" target="_blank" class="flaticon-youtube"></a></li>
-          <li><a href="https://soundcloud.com/universalorder/" target="_blank" class="flaticon-soundcloud"></a></li>
-        </ul>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/pages/Universal-Order/811894985509505" target="_blank" class="flaticon-facebook"></a></li>
+            <li><a href="https://twitter.com/uniorder" target="_blank" class="flaticon-social"></a></li>
+            <li><a href="https://www.youtube.com/user/universalorderband" target="_blank" class="flaticon-youtube"></a></li>
+            <li><a href="https://soundcloud.com/universalorder/" target="_blank" class="flaticon-soundcloud"></a></li>
+          </ul>
 
       </div>
     </footer>
