@@ -29,9 +29,9 @@
   <body>
     
     <header>
+      <a href="#" id="mobile" class="flaticon-menu"></a>
       <div class="wrap">
-        <img src="<?php bloginfo('template_directory'); ?>/images/universal-order-logo.png" alt="Universal Order Live Music Band" id="logo" title="Universal Order Live Music Band"/>
-        <a href="#" id="mobile" class="flaticon-menu"></a>       
+        <img src="<?php bloginfo('template_directory'); ?>/images/universal-order-logo.png" alt="Universal Order Live Music Band" id="logo" title="Universal Order Live Music Band"/>       
         <nav>
           <?php wp_nav_menu( array('menu' => 'main-menu','container' => false )); ?>
           <ul class="social" id="social">

@@ -3,7 +3,6 @@
 /* Smartphones and tablets----------- */
 @media only screen and (max-width : 767px) {
 .wrap {width:auto;margin:0 20px 0 20px;}
-header {width:auto;}
 header img#logo {width:100%;}
 
 section.main, section.right, section.full {margin-top:20px;width:100%;}
@@ -16,11 +15,12 @@ section.right {clear:both;margin-top:0;}
 #menu-main-menu{position:relative;}
 #menu-main-menu li{display:block;}
 #menu-main-menu.show {height:auto;}
-#menu-main-menu.show li {height:auto;border-top:#111 solid 1px;padding:20px 0 0 0;margin-top:20px;}
+#menu-main-menu.show li {height:auto;border-top:#111 solid 1px;padding:10px 0 0 0;margin-top:10px;}
 }
 
 /* Smartphones----------- */
 @media only screen and (max-width : 480px) {
+.wrap {margin:0 10px 0 10px;}
 body {font-size:0.9em;}
 .banner {height: 250px;}
 .banner section article {margin-top:50px;font-size:0.75em;}
@@ -43,6 +43,8 @@ section.main {width:468px;} /* + 40 + */ section.right {width:200px;} /* = 965 *
 .banner {height: 400px;}
 .banner section article {margin-top:120px;}
 article span.day, article span.month{clear:none;}
+.right article time{float:none;}
+.right article h1{clear:both;}
 }
 
 /* Desktops and laptops ----------- */

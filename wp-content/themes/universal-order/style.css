@@ -59,9 +59,10 @@ font-family: Flaticon;font-size: 2.0em;font-style: normal;font-weight:normal;
 
 .social {position:absolute;top:0px;right:0px;z-index:20;color:#fff;font-size:0.9em;}    
 .social li {display:inline-block;padding:0;padding-left:10px;}
-.social a, #mobile {background:#fff;padding:4px 5px 1px 5px;display:inline-block;border-radius: 6px;-moz-border-radius: 6px; -webkit-border-radius: 6px; border: 1px solid #fff;color:#000;}
-#mobile {position:absolute;top:0px;right:0px;z-index:20;display:none;padding:5px 5px 2px 5px;}
-.social a:hover, #mobile:hover{background:#ec242e;border: 1px solid #ec242e;}
+.social a, #mobile {background:#fff;padding:2px 5px 1px 5px;display:inline-block;border: 0px solid #fff;color:#000;}
+.social a {border-radius: 6px;-moz-border-radius: 6px; -webkit-border-radius: 6px;}
+#mobile {background:#666;position:absolute;top:0px;right:0px;z-index:20;display:none;}
+.social a:hover, #mobile:hover{background:#ec242e;border: 0px solid #ec242e;}
 
 
 h1,h2,h3,time {margin:0;font-weight:bold;margin-bottom:2px;display:block;float:left;clear:left;padding:5px 10px 5px 10px;background:#000;color:#fff;}
@@ -94,11 +95,11 @@ article time{background:#666;}
 article section {clear:both;padding:10px 0 0px 0px;}
 article p.read{clear:left;}
 
-section article section img {float:left;margin-right:20px;width:200px;border:#000 solid 0px;margin-bottom:10px;margin-top:16px;clear:left;height: auto;}
+section article section img {margin-right:20px;width:200px;border:#000 solid 0px;margin-bottom:10px;clear:left;height:auto;float:left;}
 section article section img.alignright {float:right;margin-right:0px;margin-left:20px;clear:right;}
 section article section img.size-full {float:none;margin-right:0px;margin-left:0px;clear:left;width:100%;margin-top:10px;}
 
-.right article time{margin:0;font-size:0.9em;margin:0 10px 10px 0;padding:0;display:inline-block}
+.right article time{margin:0;font-size:0.9em;margin:0 10px 10px 0;padding:0;display:inline-block;float:left;}
 .right article span.day, article span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;}
 .right article span.day{background:#000;color:#fff;}
 .right article span.month{background:#ec242e;color:#fff;font-weight:bold;}
