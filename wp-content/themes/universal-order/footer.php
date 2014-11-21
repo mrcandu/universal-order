@@ -4,26 +4,22 @@
     <footer>
       <div class="wrap">
         <section class="main">
-          <article>
             <a id="contact"></a>
             <h1>Universal Order</h1>
             <h2>Live Music Band</h2>
             <h3>Corporate Events | Weddings | Pub Gigs | Clubs</h3>
-            <section>
-              <p>If you need the best wedding band, rock band or cover band for your event, hire the Universal Order live band. Playing classics from 1960s to present day. Hire the best live music band for events in London, Surrey, Twickenham, Kingston and Richmond.</p>
-              <p>Contact <a href="mailto:info@universalorder.co.uk">info@universalorder.co.uk</a></p>
-            </section>
-          </article>
+            <p>If you need the best wedding band, rock band or cover band for your event, hire the Universal Order live band. Playing classics from 1960s to present day. Hire the best live music band for events in London, Surrey, Twickenham, Kingston and Richmond.</p>
+            <p>Contact <a href="mailto:info@universalorder.co.uk">info@universalorder.co.uk</a></p>
         </section>
-        <div class="clear"></div>
-
+        <aside>
           <ul class="social">
             <li><a href="https://www.facebook.com/pages/Universal-Order/811894985509505" target="_blank" class="flaticon-facebook"></a></li>
             <li><a href="https://twitter.com/uniorder" target="_blank" class="flaticon-social"></a></li>
             <li><a href="https://www.youtube.com/user/universalorderband" target="_blank" class="flaticon-youtube"></a></li>
             <li><a href="https://soundcloud.com/universalorder/" target="_blank" class="flaticon-soundcloud"></a></li>
           </ul>
-
+        </aside>
+        <div class="clear"></div>
       </div>
     </footer>
     <?php wp_footer(); ?>

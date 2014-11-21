@@ -47,18 +47,16 @@
 
 <?php if(is_front_page()==true): ?>		
 
-    <article class="banner">
+    <div class="banner">
       <div class="wrap">
         <section class="full">
-          <article>
             <h1>Universal Order</h1>
             <h2>Live Music Band</h2>
             <h3>Corporate Events | Weddings | Pub Gigs | Clubs</h3>
-          </article>
         </section>        
         <div class="clear"></div>
       </div>
-    </article>
+    </div>
 
 <?php endif; ?>	 
     

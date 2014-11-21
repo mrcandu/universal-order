@@ -19,9 +19,9 @@
         
       </section>
 
-      <section class="right">
+      <aside>
         <?php get_sidebar(); ?>       
-      </section>
+      </aside>
       
       </main>
 <?php get_footer(); ?>

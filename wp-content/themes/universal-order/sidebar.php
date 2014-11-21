@@ -8,7 +8,7 @@
 <?php foreach ( $events_array as $post ) : setup_postdata( $post ); ?>
 <?php $date = DateTime::createFromFormat('Ymd', get_field('event_date')); ?>
                 
-        <article>
+        <article class="event">
         
             <time datetime="<?php echo $date->format('Y-m-d'); ?>" title="<?php echo $date->format('Y-m-d'); ?>">
               <span class="day"><?php echo $date->format('jS'); ?></span>
