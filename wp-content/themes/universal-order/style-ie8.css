@@ -10,7 +10,7 @@
 @font-face {font-family: 'CoreSansNR-Lighter'; font-weight:normal; src: url('fonts/s-core_-_coresansnr35light-webfont.eot');src: url('fonts/s-core_-_coresansnr35light-webfont?#iefix') format('embedded-opentype'),url('fonts/s-core_-_coresansnr35light-webfont.woff') format('woff'),url('fonts/s-core_-_coresansnr35light-webfont.ttf') format('truetype');}
 
 
-header,nav,section,article,aside,footer,main {display:block;}
+header,nav,section,article,aside,footer,main,time{display:block;}
 body,input,select,textarea {font-family: 'CoreSansNR-Normal';font-weight:normal;} 
 h1,h2,h3,h4,h5,h6,b,strong {font-family: 'CoreSansNR-Bold';font-weight:normal;}
 #menu-main-menu li a, .banner h3, strong.title{font-family: 'CoreSansNR-Lighter';font-weight:normal;}

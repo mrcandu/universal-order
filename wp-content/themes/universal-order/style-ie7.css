@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
-nav li,#menu-main-menu li a,h1,h2,h3 {display: inline;zoom: 1;}
-article h1 {float:none;}
-.banner h3 {width:490px;}
-footer section h3 {width:375px;}
+nav li,#menu-main-menu li a,h1,h2,h3,time {display: inline;zoom: 1;}
 .social,#mobile{display:none;}
+.banner h3 {width:490px;}
+section.main h1,article h1 {float:none;}
+footer section h3 {width:375px;}

@@ -2,8 +2,8 @@
 
 /* Smartphones and tablets----------- */
 @media only screen and (max-width : 767px) {
+header img#logo {width:100%;max-width:450px;}
 .wrap {width:auto;margin:0 20px 0 20px;}
-header img#logo {width:100%;}
 
 section.main, aside, section.full {margin-top:20px;width:100%;}
 aside {clear:both;margin-top:0;}
@@ -11,46 +11,53 @@ aside {clear:both;margin-top:0;}
 .social{display:none;}
 
 #mobile{display:block;}
-#menu-main-menu, #menu-main-menu li {overflow:hidden;height:0;margin:0px;-webkit-transition: all .5s ease;-moz-transition: all .5s ease;transition: all .5s ease;padding:0;}
+#menu-main-menu, #menu-main-menu li {overflow:hidden;height:0;margin:0px;-webkit-transition: all .5s ease;-moz-transition: all .5s ease;transition: all .5s ease;padding:0;font-size:1em;}
 #menu-main-menu{position:relative;}
 #menu-main-menu li{display:block;}
 #menu-main-menu.show {height:auto;}
 #menu-main-menu.show li {height:auto;border-top:#111 solid 1px;padding:10px 0 0 0;margin-top:10px;}
+
+body {font-size:0.95em;}
+article p {font-size:1.1em;}
+main article{margin-bottom:20px;}
 }
 
 /* Smartphones----------- */
 @media only screen and (max-width : 480px) {
 .wrap {margin:0 10px 0 10px;}
-body {font-size:0.9em;}
 .banner {height: 250px;}
-.banner section article {margin-top:50px;font-size:0.75em;}
-main article{margin-bottom:20px;}
+.banner section {margin-top:90px;font-size:0.65em;}
+section article section img {width:100px;}
+section article section img.size-full {width:100%;}
 }
 
 /* tablets ----------- */
 @media only screen and (min-width : 481px) and (max-width : 767px) {
-body {font-size:0.9em;}
-.banner {height: 250px;}
-.banner section article {margin-top:50px;font-size:0.75em;}
-main article{margin-bottom:20px;}
+.banner {height: 300px;}
+.banner section {margin-top:120px;font-size:0.75em;}
 }
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
 .wrap {margin:auto;width:708px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
 section.main {width:468px;} /* + 40 + */ aside {width:200px;} /* = 965 */
 .banner {height: 400px;}
-.banner section article {margin-top:120px;}
-article span.day, article span.month{clear:none;}
-.right article time{float:none;}
-.right article h1{clear:both;}
+.banner section {margin-top:150px;}
+span.day, span.month{clear:none;}
+aside article time{float:none;}
+aside article h1{clear:both;}
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1024px) and (max-width : 1365px) {
-.wrap {margin:auto;width:964px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
-section.main {width:648px;} /* + 40 + */ aside {width:276px;} /* = 964 */
+@media only screen and (min-width : 1024px) and (max-width : 1279px) {
+/* Default ----------- */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1280px) and (max-width : 1365px) {
+.wrap {margin:auto;width:1220px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
+section.main {width:826px;} /* + 40 + */ aside {width:354px;} /* = 964 */
 }
 
 /* Large screens ----------- */
