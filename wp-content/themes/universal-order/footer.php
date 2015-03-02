@@ -8,7 +8,7 @@
             <h1>Universal Order</h1>
             <h2>Live Music Band</h2>
             <h3>Corporate Events | Weddings | Pub Gigs | Clubs</h3>
-            <p>If you need the best wedding band, rock band or cover band for your event, hire the Universal Order live band. Playing classics from 1960s to present day. Hire the best live music band for events in London, Surrey, Twickenham, Kingston and Richmond.</p>
+            <p>If you need the best wedding band, rock band or cover band for your event, hire the Universal Order live band. Playing classics from 1960s to present day. Hire the best live music band for events in London, Twickenham, Kingston and Richmond.</p>
             <p>Contact <a href="mailto:info@universalorder.co.uk">info@universalorder.co.uk</a></p>
         </section>
         <aside>
