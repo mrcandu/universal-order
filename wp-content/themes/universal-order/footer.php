@@ -1,6 +1,3 @@
-    <div class="clear"></div>
-    </div>
-    
     <footer>
       <div class="wrap">
         <section class="main">

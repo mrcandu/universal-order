@@ -44,20 +44,3 @@
 
       </div>
     </header>
-
-<?php if(is_front_page()==true): ?>		
-
-    <div class="banner">
-      <div class="wrap">
-        <section class="full">
-            <h1>Universal Order</h1>
-            <h2>Live Music Band</h2>
-            <h3>Corporate Events | Weddings | Pub Gigs | Clubs</h3>
-        </section>        
-        <div class="clear"></div>
-      </div>
-    </div>
-
-<?php endif; ?>	 
-    
-    <div class="wrap">

@@ -23,7 +23,7 @@ Text Domain: universalorder
 
 
 html {padding:0;margin:0;}
-body {padding:0;margin:0;webkit-font-smoothing: antialiased;background:#efefef}
+body {padding:0;margin:0;webkit-font-smoothing: antialiased;background:#eee}
 body,input,select,textarea {font-family:'CoreSansNR';font-size:1.1em;color:#000;font-weight:normal}
 img {padding:0;margin:0;border:0;display:block;}
 a {color:#ec242e;text-decoration:none;}
@@ -48,13 +48,14 @@ nav li {display:inline-block;padding:0;}
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 font-family: Flaticon;font-size: 2.0em;font-style: normal;font-weight:normal;
 }
-.flaticon-link:before {content: "\e000";font-size: 0.9em;padding-right:10px;}
-.flaticon-map:before {content: "\e001";font-size: 1.2em;padding-right:5px;}
+.flaticon-more:after {content: "\e003";font-size: 1.1em;padding-left:5px;display:inline-block;position:relative;top:1px}
+.flaticon-link:after {content: "\e000";font-size: 0.85em;padding-left:8px;display:inline-block;position:relative;top:-2px}
+.flaticon-map:before {content: "\e001";font-size: 1.25em;padding-right:5px;display:inline-block;position:relative;top:2px}
 .flaticon-facebook:before {content: "\e002";}
-.flaticon-menu:before {content: "\e003";}
-.flaticon-social:before {content: "\e004";}
-.flaticon-soundcloud:before {content: "\e005";}
-.flaticon-youtube:before {content: "\e006";}
+.flaticon-menu:before {content: "\e004";}
+.flaticon-social:before {content: "\e005";}
+.flaticon-soundcloud:before {content: "\e006";}
+.flaticon-youtube:before {content: "\e007";}
 
 
 .social {position:absolute;top:0px;right:0px;z-index:20;color:#fff;font-size:0.9em;}    
@@ -69,9 +70,10 @@ h1,h2,h3,time {margin:0;font-weight:bold;margin-bottom:2px;display:block;float:l
 h1,h2{text-transform:uppercase;}
 h3,time {padding:4px 8px 4px 8px;font-style:normal;font-weight:normal;font-size:0.9em;}
 h3{background-color:#000;}
-time{background-color:#666;color:#fff;margin:0 10px 20px 0;}
+time{background-color:#666;color:#fff;}
+h1 a {color:#fff;}
+h1 a:hover {color:#ec242e;}
 
-section.main, aside, section.full {margin-top:40px;}
 section.main {float:left;margin-right:40px;clear:left;}
 aside {float:right;clear:right;}
 section.full {float:left;clear:both;width:100%;}
@@ -82,20 +84,38 @@ section.full {float:left;clear:both;width:100%;}
 .banner h1, footer section h1 {font-size:2.6em;font-weight:800;}
 .banner h2, footer section h2 {font-size:1.3em;}
 .banner h3, footer section h3 {font-size:1.3em;font-weight:lighter;}
+.test {background-image: url('images/test.png');height:300px;}
 
+.promo {padding-top:40px;padding-bottom:10px;background:#fff;}
+.promo section {float:left;clear:none;margin-right:40px;}
+.promo section.right {margin-right:0;}
+.promo section .flag{background-size: cover;background-position: top;height:100px;position:relative;}
+.promo section h1 {position:absolute;bottom:0px;margin-bottom:0;}
+.promo section.left .flag{background-image: url('images/flag-left.png');}
+.promo section.mid .flag{background-image: url('images/flag-mid.png');}
+.promo section.right .flag{background-image: url('images/flag-right.png');}
+.promo section h2 {font-size:1.3em;background:none;text-transform:none;color:#000;font-weight:bold;padding:0;margin-top:10px;margin-bottom:0px;}
+.promo article{padding:0;background:none;padding-top:10px;}
+
+
+main {margin-top:40px;}
 strong.title {display: block;font-weight: lighter;text-transform: uppercase;color: #000;padding: 0;margin: 0;margin-bottom: 20px;font-size: 1.6em;}
 
-article {border-bottom:0px solid #ddd;margin-bottom:20px;position:relative;background:#fff;padding:20px 20px 10px 20px;clear:both;}
-section.main h1 {font-size:2em;}
-section.main h1 a {color:#fff;}
-section.main h1 a:hover {color:#ec242e;}
-section.main article h1{font-size:1.3em;}
-article section {clear:both;padding:0px 0 0px 0px;}
-p.read{clear:both;}
 
-section article section img {margin-right:20px;width:200px;border:#000 solid 0px;margin-bottom:10px;margin-top:6px;clear:left;height:auto;float:left;}
-section article section img.alignright {float:right;margin-right:0px;margin-left:20px;clear:right;}
-section article section img.size-full {float:none;margin-right:0px;margin-left:0px;clear:left;width:100%;margin-top:10px;}
+
+article {margin-bottom:20px;background:#fff;padding:20px 20px 10px 20px;clear:both;}
+.redtop {border-top:5px solid #ec242e;}
+.bluetop {border-top:5px solid #2e45b6;}
+
+
+section.main h1 {font-size:2em;}
+section.main article h1{font-size:1.3em;}
+article section {clear:both;padding:0;padding-top:10px;}
+.link{clear:both;padding-bottom:10px;display:inline-block;}
+
+article img {margin-right:20px;width:200px;border:#000 solid 0px;margin-bottom:10px;clear:left;height:auto;float:left;}
+article img.alignright {float:right;margin-right:0px;margin-left:20px;clear:right;}
+article img.size-full {float:none;margin-right:0px;margin-left:0px;clear:left;width:100%;}
 
 aside article h1 {background:none;font-size:1.00em;display:inline;margin:0px;padding:0;float:none;clear:none;}
 aside article h1 a {color:#000;display:block;}
@@ -103,23 +123,25 @@ aside article h1 a:hover {color:#ec242e;}
 aside article em {display:inline-block;margin:5px 0 10px 0;color:#666;font-size:0.9em;font-style:normal;}
 aside article p {clear:both;}
 
-article.event time{font-size:0.9em;padding:0;display:inline-block;float:left;margin:0 10px 10px 0;}
-article.event span.day, article span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;}
-article.event span.day{background:#000;color:#fff;}
-article.event span.month{background:#ec242e;color:#fff;font-weight:bold;}
+article.event time{font-size:0.9em;padding:0;display:inline-block;float:left;margin:0 10px 10px 0;background:none;}
+span.day, span.month{display:inline-block;float:left;clear:left;text-align:center;width:60px;padding:5px 0 5px 0;}
+span.day{background:#000;color:#fff;margin-bottom:2px;}
+span.month{background:#ec242e;color:#fff;font-weight:bold;}
 
 
-footer{background:#ec242e;clear:both;}
+footer{background:#ec242e;clear:both;padding-top:40px;}
 footer a{color:#000;font-weight:bold;}
 footer a:hover{color:#fff;}
 footer section {margin-bottom:20px;font-size:0.7em;}
 footer section h1, footer section h2, footer section h3 {color:#ec242e;}
 footer section h3 {margin-bottom:20px;}
 footer p {clear:both;font-size:1.3em;}
-footer .social {position:absolute;top:20px;}
+footer .social {position:absolute;top:-20px;}
 footer .social a{background:#000;color:#ec242e;}
 footer .social a:hover{background:#fff;}
 
 /*Width for non responsive browsers*/
-.wrap {margin:auto;width:964px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
-section.main {width:648px;} /* + 40 + */ aside {width:276px;} /* = 964 */
+.wrap {margin:auto;width:962px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1022*/
+section.main {width:647px;} /* + 40 + */ aside {width:275px;} /* = 962 */
+.promo section {width:294px;}  /* = 962 - 40 - 40 / 3 */
+.promo section .flag{height:100px;}

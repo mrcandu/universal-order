@@ -5,8 +5,9 @@
 header img#logo {width:100%;max-width:450px;}
 .wrap {width:auto;margin:0 20px 0 20px;}
 
-section.main, aside, section.full {margin-top:20px;width:100%;}
-aside {clear:both;margin-top:0;}
+section.main, aside, section.full, .promo section {margin-top:20px;width:100%;}
+aside,.promo section {clear:both;margin-top:0;}
+.promo section .flag{height:100px;}
 
 .social{display:none;}
 
@@ -39,29 +40,36 @@ section article section img.size-full {width:100%;}
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1023px) {
-.wrap {margin:auto;width:708px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
-section.main {width:468px;} /* + 40 + */ aside {width:200px;} /* = 965 */
+@media only screen and (min-width : 768px) and (max-width : 1021px) {
+.wrap {margin:auto;width:707px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
+section.main {width:468px;} /* + 40 + */ aside {width:199px;} /* = 707 */
+.promo section {width:209px;}  /* = 707 - 40 - 40 / 3 */
+.promo section .flag{height:150px;}
 .banner {height: 400px;}
 .banner section {margin-top:150px;}
 span.day, span.month{clear:none;}
-aside article time{float:none;}
+span.day {margin:0 2px 0 0;}
+article.event time{float:none;margin-left:0;}
 aside article h1{clear:both;}
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1024px) and (max-width : 1279px) {
+@media only screen and (min-width : 1022px) and (max-width : 1279px) {
 /* Default ----------- */
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1280px) and (max-width : 1365px) {
+@media only screen and (min-width : 1280px) and (max-width : 1363px) {
 .wrap {margin:auto;width:1220px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1024*/
-section.main {width:826px;} /* + 40 + */ aside {width:354px;} /* = 964 */
+section.main {width:826px;} /* + 40 + */ aside {width:354px;} /* = 1220 */
+.promo section {width:380px;}  /* = 1220 - 40 - 40 / 3 */
+.promo section .flag{height:100px;}
 }
 
 /* Large screens ----------- */
-@media only screen  and (min-width : 1366px) {
-.wrap {margin:auto;width:1306px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1366*/
-section.main {width:886px;} /* + 40 + */ aside {width:380px;} /* = 965 */
+@media only screen  and (min-width : 1364px) {
+.wrap {margin:auto;width:1304px;} /*+20 for scroll, +20 for left margin, +20 for right margin = 1364*/
+section.main {width:885px;} /* + 40 + */ aside {width:379px;} /* = 1304 */
+.promo section {width:408px;}  /* = 1304 - 40 - 40 / 3 */
+.promo section .flag{height:100px;}
 }
